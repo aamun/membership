@@ -1,0 +1,31 @@
+body {
+  padding-top: 50px;
+}
+#controls{
+    margin-bottom: 10px;
+}
+.timestamp{
+    display: block;
+    line-height: 34px;
+}
+.title{
+    /*color: #fff;*/
+    background-color: #eeeeee;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+.expense a, .income a{
+    display: block;
+    padding: 10px;
+    margin: 10px inherit;
+    border-radius: 5px;
+}
+.expense a:hover, .income a:hover{
+    text-decoration: none;
+    background-color: #575757;
+    color: #fff;
+}
+.expense a span, .income a span{
+    position: absolute;
+    right: 25px;
+}
