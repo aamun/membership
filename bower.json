@@ -1,0 +1,21 @@
+{
+  "name": "membership",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rinox/membership",
+  "authors": [
+    "Aaron Munguia <aamm89@gmail.com>"
+  ],
+  "main": "index.php",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
