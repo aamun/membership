@@ -39,19 +39,19 @@
     <div class="form-group">
         <label class="col-sm-2 control-label" for="phone">Phone:</label>
         <div class="col-sm-10">
-            <input class="form-control" type="text" name="phone" placeholder="123-456-789">
+            <input class="form-control" type="text" name="phone" value="<?php echo $member['phone']; ?>" placeholder="123-456-789">
         </div>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label" for="ife">ID number (ife):</label>
         <div class="col-sm-10">
-            <input class="form-control" type="text" name="ife" placeholder="ife">
+            <input class="form-control" type="text" name="ife" value="<?php echo $member['ife']; ?>" placeholder="ife">
         </div>
     </div>
     <div class="form-group">
         <label class="col-sm-2 control-label" for="student_id">student ID:</label>
         <div class="col-sm-10">
-            <input class="form-control" type="text" name="student_id" placeholder="proof of studies">
+            <input class="form-control" type="text" name="student_id" value="<?php echo $member['student_id']; ?>" placeholder="proof of studies">
         </div>
     </div>
 </fieldset>
