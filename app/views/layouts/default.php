@@ -6,6 +6,7 @@
         <meta name="author" content="Aarón Munguía">
         <meta name="generator" content="flavorPHP" />
         <?php echo $this->html->charsetTag("UTF-8"); ?>
+        <?php echo $this->html->includeFavicon(); ?>
         <link rel="stylesheet" href="<?php echo Path; ?>/bower_components/bootstrap/dist/css/bootstrap.min.css">
         <?php echo $this->html->includeCSS('skin'); ?>
 
