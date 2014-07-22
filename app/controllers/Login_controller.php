@@ -16,7 +16,7 @@ class Login_controller extends AppController {
         // if user is sign in
         if ($this->session->check('login')) {
             // Redirect to dashboard
-            $this->redirect("members");
+            $this->redirect("dashboard");
         }
 
         $user = new User();
@@ -28,7 +28,7 @@ class Login_controller extends AppController {
                 $this->session['idUser'] = $user['idUser'];
 
                 // Redirect to dashboard
-                $this->redirect('users/members');
+                $this->redirect('dashboard');
             } else {
                 $this->messages->addMessage(Message::WARNING, "Wrong Username/Email and password combination.");
             }
