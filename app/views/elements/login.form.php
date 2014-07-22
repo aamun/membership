@@ -1,20 +1,7 @@
-<?php echo $this->html->form("login", 'POST', 'role="form" class="form-horizontal"'); ?>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email:</label>
-        <div class="col-sm-10">
-            <input type="text" name="email" value="<?php echo $user['email']; ?>" class="form-control" placeholder="Email">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="password" class="col-sm-2 control-label">Password:</label>
-        <div class="col-sm-10">
-            <input type="password" name="password" class="form-control" placeholder="password">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <input type="submit" name="login" value="Login" class="btn btn-primary">
-            <?php //echo $this->html->linkTo("Sign up", "users/create", 'class="btn btn-default"'); ?>
-        </div>
-    </div>
+<?php echo $this->html->form("login", 'POST', 'role="form" class="form-signin"'); ?>
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <?php $this->renderElement('messages'); ?>
+    <input type="email" name="email" value="<?php echo $user['email']; ?>" class="form-control" placeholder="Email">
+    <input type="password" name="password" class="form-control" placeholder="Password">
+    <input type="submit" name="login" value="Sign in" class="btn btn-lg btn-primary btn-maker btn-block">
 </form>
