@@ -1,12 +1,18 @@
 <?php
 
 abstract class AppController extends Controller {
-	
-	public function __construct() {
-		parent::__construct();
-	}
-	
-	public function beforeRender(){
-	//	$this->debug->log('Pase por '.get_class($this).'<br>','Route',true);
-	}
+    
+    protected $messages;
+
+    public function __construct() {
+        parent::__construct();
+        $this->messages = Message::getInstance();
+    }
+    
+
+    public function authenticate(){
+        if (!$this->session->check('login')) {
+            $this->redirect('login');
+        }
+    }
 }
