@@ -1,21 +1,21 @@
+<p class="pull-right">
+    <?php echo $this->html->linkTo("Register new member", "members/create", 'class="btn btn-primary btn-maker"'); ?>
+</p>
+
 <h1>Members</h1>
 
 <?php $this->renderElement("messages"); ?>
-
-<p>
-    <?php echo $this->html->linkTo("Register new member", "members/create", 'class="btn btn-primary"'); ?>
-</p>
 
 <div class="row">
     <div class="col-sm-12">
         <table class="table">
             <thead>
                 <tr>
-                    <th colspan="2">Full name</th>
+                    <th>Nº</th>
+                    <th>Full name</th>
                     <th>Email</th>
                     <th>
                         Member since <br>
-                        mm/dd/yyyy
                     </th>
                     <th>Options</th>
                 </tr>
@@ -23,8 +23,8 @@
             <tbody>
             <?php foreach ($members as $key => $member): ?>
                 <tr>
-                    <td><?php echo $member['first_name'] ?></td>
-                    <td><?php echo $member['last_name'] ?></td>
+                    <td><?php echo ($key+1); ?></td>
+                    <td><?php echo $member['first_name'] ?> <?php echo $member['last_name'] ?></td>
                     <td><?php echo $member['email']; ?></td>
                     <td><?php echo date("M d, Y", strtotime($member['registration_date'])); ?></td>
                     <td>
