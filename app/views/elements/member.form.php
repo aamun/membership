@@ -5,7 +5,7 @@
         <label for="membership_type" class="control-label col-sm-2">Membership:</label>
         <div class="col-sm-10">
             <select class="form-control" name="membership_type" id="">
-                <option value="1" <?php echo $member['membership_type'] == 1 ? "selected":""; ?>>Normal</option>
+                <option value="1" <?php echo $member['membership_type'] == 1 ? "selected":""; ?>>Standard</option>
                 <option value="2" <?php echo $member['membership_type'] == 2 ? "selected":""; ?>>Student</option>
             </select>
         </div>
@@ -13,7 +13,7 @@
     <div class="form-group">
         <label class="col-sm-2 control-label" for="registration_date">Registration date:</label>
         <div class="col-sm-10">
-            <input class="form-control" type="date" name="registration_date" placeholder="mm/dd/yyyy" value="<?php echo $member['registration_date']; ?>">
+            <input class="form-control" type="date" name="registration_date" placeholder="mm/dd/yyyy" value="<?php echo $member['registration_date'] ? $member['registration_date'] : date('Y-m-d'); ?>">
         </div>
     </div>
 </fieldset>
