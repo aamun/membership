@@ -1,31 +1,44 @@
-body {
-  padding-top: 50px;
+a{
+    color: #808080;
 }
-#controls{
-    margin-bottom: 10px;
+a:hover, a:focus{
+    color: #AA2333;
 }
-.timestamp{
-    display: block;
-    line-height: 34px;
+h1, h2, h3, h4{
+    margin-top: 10px;
 }
-.title{
-    /*color: #fff;*/
-    background-color: #eeeeee;
-    padding: 1px 10px;
-    border-radius: 5px;
+.header{
+    min-height: 80px;
+    margin-top: 30px;
 }
-.expense a, .income a{
-    display: block;
-    padding: 10px;
-    margin: 10px inherit;
-    border-radius: 5px;
+#header-logo{
+    vertical-align: bottom;
+    margin-bottom: -13px;
+    margin-top: -22px;
 }
-.expense a:hover, .income a:hover{
-    text-decoration: none;
-    background-color: #575757;
-    color: #fff;
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:hover, 
+.nav-pills>li.active>a:focus {
+    background-color: #AA2333;
 }
-.expense a span, .income a span{
-    position: absolute;
-    right: 25px;
+.btn-maker{
+    background-color: #AA2333;
+    border-color: transparent;
+}
+
+.btn-maker:hover, 
+.btn-maker:focus, 
+.btn-maker:active, 
+.btn-maker.active, 
+.open .dropdown-toggle.btn-maker{
+    background-color: #34495e;
+    border-color: transparent;
+}
+.project .description{
+    min-height: 140px;
+    /*max-height: 100px;*/
+}
+.project .thumbnail{
+    height: 200px;
+    overflow: hidden;
 }
