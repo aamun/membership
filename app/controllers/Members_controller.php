@@ -10,6 +10,8 @@ class Members_controller extends AppController {
      */
     public function beforeDispatch(){
         $this->authenticate();
+
+        date_default_timezone_set("America/Mexico_City");
     }
 
     public function beforeRender(){
@@ -21,7 +23,7 @@ class Members_controller extends AppController {
 
         // Pagination
         $page = is_null($page) || !is_numeric($page) ? 1 : $page;
-        $limit = 10;
+        $limit = 100;
         $offset = (($page-1) * $limit);
         $limitQuery = $offset.",".$limit;
         $targetpage = $this->path.'members/';
