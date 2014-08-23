@@ -5,6 +5,7 @@
 class Login_controller extends AppController {  
 
     public function beforeRender(){
+        parent::beforeRender();
         $this->view->setLayout('index');
     }
     /**

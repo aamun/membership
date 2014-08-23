@@ -3,6 +3,7 @@
 abstract class AppController extends Controller {
     
     protected $messages;
+    protected $navPills = array('', '', '');
 
     public function __construct() {
         parent::__construct();
@@ -14,5 +15,9 @@ abstract class AppController extends Controller {
         if (!$this->session->check('login')) {
             $this->redirect('login');
         }
+    }
+
+    public function beforeRender(){
+        $this->view->navPills = $this->navPills;
     }
 }

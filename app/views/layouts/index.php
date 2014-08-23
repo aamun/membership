@@ -19,8 +19,9 @@
             <div class="header">
 
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><?php echo $this->html->linkTo("Home","index/"); ?></li>
-                    <li><?php echo $this->html->linkTo("Log in","login/"); ?></li>
+                    <li class="<?php echo $navPills[0]; ?>"><?php echo $this->html->linkTo("Home","index/"); ?></li>
+                    <li class="<?php echo $navPills[1]; ?>"><?php echo $this->html->linkTo("Open door","door/"); ?></li>
+                    <li class="<?php echo $navPills[2]; ?>"><?php echo $this->html->linkTo("Log in","login/"); ?></li>
                     <!-- <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li> -->
                 </ul>
